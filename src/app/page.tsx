@@ -7,9 +7,10 @@ export default function Home() {
             {/* 1. Hero szekció (Banner) */}
             <section className="relative w-full h-100 md:h-125">
                 <Image
-                    src="/media/uzlet.png"
+                    src="/media/uzlet.jpg"
                     alt="Autópatika Bt. zalaegerszegi üzlete"
                     fill
+                    sizes="100vw"
                     className="object-cover"
                     priority
                 />
@@ -62,7 +63,9 @@ export default function Home() {
                                 src="/media/app_ikon.png"
                                 alt="Autópatika mobilalkalmazás ikonja"
                                 fill
+                                sizes="(max-width: 768px) 192px, 256px"
                                 className="object-contain"
+                                priority
                             />
                         </div>
                     </div>

@@ -254,6 +254,7 @@ export default function Elerhetoseg() {
                                 src="/media/bankkartya.png"
                                 alt="Elfogadott bankkártyák: Visa, Mastercard, Maestro"
                                 fill
+                                sizes="250px"
                                 className="object-contain object-left"
                             />
                         </div>

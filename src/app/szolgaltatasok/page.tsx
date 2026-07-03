@@ -158,6 +158,7 @@ export default function Szolgaltatasok() {
                                     src={service.menuImg}
                                     alt={service.title}
                                     fill
+                                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 16vw"
                                     className="object-cover opacity-80 group-hover:opacity-100 transition-opacity"
                                 />
                                 <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent"></div>
@@ -200,6 +201,7 @@ export default function Szolgaltatasok() {
                                                     src={img.src}
                                                     alt={img.alt}
                                                     fill
+                                                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                                                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                                                 />
                                                 <div className="absolute bottom-3 right-3 bg-brand-green text-white p-2.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity shadow-md">
