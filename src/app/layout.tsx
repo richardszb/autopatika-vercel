@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import React from "react";
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
     title: "Autópatika Zalaegerszeg",
@@ -25,6 +26,7 @@ export default function RootLayout({
         </main>
 
         <Footer /> {}
+        <Analytics />
         </body>
         </html>
     );
