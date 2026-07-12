@@ -10,10 +10,24 @@ export default function Footer() {
                     <div>
                         <h3 className="text-white text-xl font-bold mb-4">Autópatika</h3>
                         <address className="not-italic flex flex-col gap-2">
-                            <p>Zalaegerszeg, Zrínyi Miklós utca 34/A</p>
+                            <p>
+                                <a
+                                    href="https://maps.app.goo.gl/yRVyPaFHxvdVjaUN6"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   className="hover:text-brand-sage transition-colors"
+                                >
+                                    Zalaegerszeg, Zrínyi Miklós utca 34/A
+                                </a>
+                            </p>
                             <p>
                                 <a href="tel:+36309467857" className="hover:text-brand-sage transition-colors">
                                     06-30 / 946-7857
+                                </a>
+                            </p>
+                            <p>
+                                <a href="tel:+3692510345" className="hover:text-brand-sage transition-colors">
+                                    06-92 / 510-345
                                 </a>
                             </p>
                             <p>
@@ -29,7 +43,7 @@ export default function Footer() {
                         <h3 className="text-white text-xl font-bold mb-4">Nyitvatartás</h3>
                         <div className="flex flex-col gap-2">
                             <p>Hétfő–Péntek: <strong>8:00–16:30</strong></p>
-                            <p>Szombat: <strong>8:00–12:00</strong></p>
+                            <p>Szombat: <strong>8:00–12:00 (érdeklődjön telefonon)</strong></p>
                             <p>Vasárnap: <strong>Zárva</strong></p>
                         </div>
                     </div>

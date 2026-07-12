@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-darkblue: #25314B;    /* Az eredeti --tengerszin */
-  --color-brand-navy: #1c2b4a;        /* Az eredeti overlay sötétkékje */
+  --color-brand-darkblue: #092d77;    /* Az eredeti --tengerszin */
+  --color-brand-navy: #1a3059;        /* Az eredeti overlay sötétkékje */
   --color-brand-slate: #555555;       /* Az eredeti szürke másodlagos szövegszín */
   --color-brand-sage: #96d908;        /* Az eredeti világoszöld (pl. a lábléc linkeknél) */
-  --color-brand-green: #486803;       /* Az eredeti --zold */
+  --color-brand-green: #96d908;       /* Az eredeti --zold */
   --color-brand-lightgray: #f4f6fb;   /* Az eredeti --vilagos háttér */
   --color-brand-lilac: #c5cfe0;       /* Az eredeti űrlap keret (border) színe */
 }

@@ -83,51 +83,54 @@ export default function Elerhetoseg() {
                             Elérhetőségeink
                         </h2>
 
-                        <div className="space-y-8">
-                            <div className="flex items-start gap-4">
-                                <div className="bg-brand-sage/20 p-3 rounded-full text-brand-green">
-                                    <MapPin size={28} />
+                        <div className="space-y-4">
+                            {/* CÍM BLOKK */}
+                            <a
+                                href="https://maps.app.goo.gl/yRVyPaFHxvdVjaUN6"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group flex items-center gap-6 p-4 rounded-xl transition-all duration-300 hover:bg-brand-lightgray cursor-pointer"
+                            >
+                                <div className="bg-brand-sage/20 p-3 rounded-full text-brand-green transition-all duration-300 group-hover:scale-110 group-hover:bg-brand-green group-hover:text-white">
+                                    <MapPin size={24} />
                                 </div>
                                 <div>
-                                    <p className="text-sm font-bold text-brand-slate uppercase tracking-wider mb-1">Címünk</p>
-                                    <a
-                                        href="https://maps.app.goo.gl/yRVyPaFHxvdVjaUN6"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-brand-darkblue font-bold text-lg md:text-xl hover:text-brand-green transition-colors underline decoration-brand-lilac underline-offset-4"
-                                    >
-                                        Zalaegerszeg, Zrínyi Miklós utca 34/A
-                                    </a>
+                                    <p className="text-xs font-bold text-brand-slate uppercase tracking-wider mb-0.5">Címünk</p>
+                                    <span className="text-brand-darkblue font-bold text-lg group-hover:text-brand-green transition-colors">Zalaegerszeg, Zrínyi Miklós utca 34/A</span>
+                                </div>
+                            </a>
+
+                            {/* TELEFON BLOKK */}
+                            <div className="group flex items-start gap-6 p-4 rounded-xl transition-all duration-300 hover:bg-brand-lightgray">
+                                <div className="bg-brand-sage/20 p-3 rounded-full text-brand-green transition-all duration-300 group-hover:scale-110 group-hover:bg-brand-green group-hover:text-white mt-1">
+                                    <Phone size={24} />
+                                </div>
+                                <div>
+                                    <p className="text-xs font-bold text-brand-slate uppercase tracking-wider mb-1.5">Telefonszámok</p>
+                                    <div className="flex flex-col gap-1">
+                                        <a href="tel:+36309467857" className="text-brand-darkblue font-bold text-lg hover:text-brand-green transition-colors">06-30 / 946-7857</a>
+                                        <a href="tel:+3692510345" className="text-brand-darkblue font-bold text-lg hover:text-brand-green transition-colors">06-92 / 510-345</a>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div className="flex items-start gap-4">
-                                <div className="bg-brand-sage/20 p-3 rounded-full text-brand-green">
-                                    <Phone size={28} />
+                            {/* E-MAIL BLOKK */}
+                            <a
+                                href="mailto:autopatikazeg@gmail.com"
+                                className="group flex items-center gap-6 p-4 rounded-xl transition-all duration-300 hover:bg-brand-lightgray cursor-pointer"
+                            >
+                                <div className="bg-brand-sage/20 p-3 rounded-full text-brand-green transition-all duration-300 group-hover:scale-110 group-hover:bg-brand-green group-hover:text-white">
+                                    <Mail size={24} />
                                 </div>
                                 <div>
-                                    <p className="text-sm font-bold text-brand-slate uppercase tracking-wider mb-1">Telefonszám</p>
-                                    <a href="tel:+36309467857" className="text-brand-darkblue font-bold text-lg md:text-xl hover:text-brand-green transition-colors">
-                                        06-30 / 946-7857
-                                    </a>
+                                    <p className="text-xs font-bold text-brand-slate uppercase tracking-wider mb-0.5">E-mail cím</p>
+                                    <span className="text-brand-darkblue font-bold text-lg group-hover:text-brand-green transition-colors">autopatikazeg@gmail.com</span>
                                 </div>
-                            </div>
-
-                            <div className="flex items-start gap-4">
-                                <div className="bg-brand-sage/20 p-3 rounded-full text-brand-green">
-                                    <Mail size={28} />
-                                </div>
-                                <div>
-                                    <p className="text-sm font-bold text-brand-slate uppercase tracking-wider mb-1">E-mail cím</p>
-                                    <a href="mailto:autopatikazeg@gmail.com" className="text-brand-darkblue font-bold text-lg md:text-xl hover:text-brand-green transition-colors">
-                                        autopatikazeg@gmail.com
-                                    </a>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
 
-                    <div className="bg-brand-navy p-8 md:p-12 rounded-2xl shadow-xl relative overflow-hidden h-full flex flex-col justify-center">
+                    <div className="bg-brand-darkblue p-8 md:p-12 rounded-2xl shadow-xl relative overflow-hidden h-full flex flex-col justify-center">
                         <div className="absolute -top-24 -right-24 w-64 h-64 bg-white rounded-full mix-blend-overlay filter blur-3xl opacity-10"></div>
 
                         <h2 className="text-3xl font-bold text-white mb-2 relative z-10">Írjon nekünk!</h2>
@@ -170,13 +173,13 @@ export default function Elerhetoseg() {
                             </div>
 
                             <div>
-                <textarea
-                    name="message"
-                    rows={3}
-                    required
-                    className="w-full bg-white/10 border border-white/20 text-white placeholder-white/50 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-sage focus:border-transparent transition-all resize-none"
-                    placeholder="Miben segíthetünk?"
-                ></textarea>
+                                <textarea
+                                    name="message"
+                                    rows={3}
+                                    required
+                                    className="w-full bg-white/10 border border-white/20 text-white placeholder-white/50 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-sage focus:border-transparent transition-all resize-none"
+                                    placeholder="Miben segíthetünk?"
+                                ></textarea>
                             </div>
 
                             {mounted && (
@@ -279,7 +282,7 @@ export default function Elerhetoseg() {
                                 </div>
                                 <div className="flex justify-between items-center text-lg">
                                     <span className="font-medium">Szombat:</span>
-                                    <span className="font-bold">8:00 – 12:00</span>
+                                    <span className="font-bold">8:00 – 12:00 (érdeklődjön telefonon)</span>
                                 </div>
                                 <div className="flex justify-between items-center text-lg text-brand-sage">
                                     <span className="font-medium">Vasárnap:</span>
