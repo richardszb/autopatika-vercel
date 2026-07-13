@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <div className="w-full">
 
-            {/* 1. Hero szekció (Banner) - CSAK FÉLIG SÖTÉTÍTETT KÉPPEL */}
+            {/* 1. Hero szekció (Banner) */}
             <section className="relative w-full h-100 md:h-125">
                 <Image
                     src="/media/uzlet.jpg"
