@@ -57,13 +57,13 @@ export default function Navbar() {
                                 key={link.path}
                                 href={link.path}
                                 className={`relative text-sm uppercase tracking-widest font-bold py-2 transition-colors group ${
-                                    isActive(link.path) ? "text-brand-sage" : "text-white hover:text-brand-sage"
+                                    isActive(link.path) ? "text-brand-green" : "text-white hover:text-brand-green"
                                 }`}
                             >
                                 {link.name}
                                 <span
                                     className={`absolute left-0 bottom-0 w-full h-0.75 rounded-full transition-transform duration-300 origin-left ${
-                                        isActive(link.path) ? "bg-brand-sage scale-x-100" : "bg-brand-sage scale-x-0 group-hover:scale-x-100"
+                                        isActive(link.path) ? "bg-brand-green scale-x-100" : "bg-brand-green scale-x-0 group-hover:scale-x-100"
                                     }`}
                                 ></span>
                             </Link>
@@ -98,7 +98,7 @@ export default function Navbar() {
                             href={link.path}
                             onClick={() => setIsOpen(false)}
                             className={`text-lg font-bold py-2 border-b border-white/10 last:border-0 ${
-                                isActive(link.path) ? "text-brand-sage" : "text-white hover:text-brand-sage"
+                                isActive(link.path) ? "text-brand-green" : "text-white hover:text-brand-green"
                             }`}
                         >
                             {link.name}

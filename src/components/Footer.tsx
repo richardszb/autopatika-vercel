@@ -15,23 +15,23 @@ export default function Footer() {
                                     href="https://maps.app.goo.gl/yRVyPaFHxvdVjaUN6"
                                    target="_blank"
                                    rel="noopener noreferrer"
-                                   className="hover:text-brand-sage transition-colors"
+                                   className="hover:text-brand-green transition-colors"
                                 >
                                     Zalaegerszeg, Zrínyi Miklós utca 34/A
                                 </a>
                             </p>
                             <p>
-                                <a href="tel:+36309467857" className="hover:text-brand-sage transition-colors">
+                                <a href="tel:+36309467857" className="hover:text-brand-green transition-colors">
                                     06-30 / 946-7857
                                 </a>
                             </p>
                             <p>
-                                <a href="tel:+3692510345" className="hover:text-brand-sage transition-colors">
+                                <a href="tel:+3692510345" className="hover:text-brand-green transition-colors">
                                     06-92 / 510-345
                                 </a>
                             </p>
                             <p>
-                                <a href="mailto:autopatikazeg@gmail.com" className="hover:text-brand-sage transition-colors">
+                                <a href="mailto:autopatikazeg@gmail.com" className="hover:text-brand-green transition-colors">
                                     autopatikazeg@gmail.com
                                 </a>
                             </p>
@@ -53,16 +53,16 @@ export default function Footer() {
                         <h3 className="text-white text-xl font-bold mb-4">Gyors linkek</h3>
                         <ul className="flex flex-col gap-2">
                             <li>
-                                <Link href="/" className="hover:text-brand-sage transition-colors">Kezdőlap</Link>
+                                <Link href="/" className="hover:text-brand-green transition-colors">Kezdőlap</Link>
                             </li>
                             <li>
-                                <Link href="/szolgaltatasok" className="hover:text-brand-sage transition-colors">Szolgáltatások</Link>
+                                <Link href="/szolgaltatasok" className="hover:text-brand-green transition-colors">Szolgáltatások</Link>
                             </li>
                             <li>
-                                <Link href="/elerhetoseg" className="hover:text-brand-sage transition-colors">Elérhetőség</Link>
+                                <Link href="/elerhetoseg" className="hover:text-brand-green transition-colors">Elérhetőség</Link>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/p/Aut%C3%B3patika-100054547295102/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-sage transition-colors">
+                                <a href="https://www.facebook.com/p/Aut%C3%B3patika-100054547295102/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-green transition-colors">
                                     Facebook
                                 </a>
                             </li>
