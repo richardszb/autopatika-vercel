@@ -59,7 +59,7 @@ const servicesData = [
         menuImg: "/media/futomualligas_menu.jpg",
         content: (
             <p className="text-lg text-brand-slate mb-6">
-                Személy és kisteher gépjárművekhez, <strong className="text-brand-darkblue">21&#34;-os kerékátmérőig</strong>, számítógép alapú, <em className="font-medium text-brand-navy">4 mérőfejes berendezés</em> a kerék geometriai jellemzőinek mérésére. A lézeres futómű-beállítás biztosítja az egyenletes gumiabroncs-kopást és a biztonságos menetdinamikát.
+                Személy és kisteher gépjárművekhez, <strong className="text-brand-darkblue">24&#34;-os kerékátmérőig</strong>, számítógép alapú, <em className="font-medium text-brand-navy">4 mérőfejes berendezés</em> a kerék geometriai jellemzőinek mérésére. A lézeres futómű-beállítás biztosítja az egyenletes gumiabroncs-kopást és a biztonságos menetdinamikát.
             </p>
         ),
         images: [
@@ -78,7 +78,6 @@ const servicesData = [
                     <ul className="list-disc pl-5 space-y-2 marker:text-brand-green">
                         <li>Személy és tehergépjárművek, mezőgazdasági és földmunkagépek, <strong className="text-brand-darkblue">targonca és motorkerékpár gumiabroncsainak szerelése és centrírozása</strong></li>
                         <li>Alu- és lemezfelnik javítása</li>
-                        <li>Futómű állítás</li>
                         <li>Akkumulátor bevizsgálás és csere</li>
                         <li>Olajcsere, levegő- és pollenszűrő csere</li>
                         <li>Klíma ellenőrzés, töltés és tisztítás</li>

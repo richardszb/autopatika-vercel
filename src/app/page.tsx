@@ -8,21 +8,19 @@ export default function Home() {
             <section className="relative w-full h-100 md:h-125">
                 <Image
                     src="/media/uzlet.jpg"
-                    alt="Autópatika Bt. zalaegerszegi üzlete"
+                    alt="Autópatika zalaegerszegi üzlete"
                     fill
                     sizes="100vw"
                     className="object-cover"
                     priority
                 />
 
-                {/* A trükk itt van: az "inset-0" helyett "bottom-0 w-full h-[60%]" */}
-                {/* Így a sötét átmenet csak a kép alsó felét takarja a szöveg mögött, a teteje teljesen világos marad! */}
                 <div className="absolute bottom-0 left-0 w-full h-[60%] bg-linear-to-t from-black/80 to-transparent"></div>
 
                 <div className="absolute bottom-0 left-0 w-full p-8 md:p-12 z-10">
                     <div className="max-w-7xl mx-auto text-white">
                         <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-2">
-                            Autópatika Bt.
+                            Autópatika
                         </h1>
                         <p className="text-lg text-brand-lightgray max-w-2xl">
                             Professzionális gumi- és autószerviz Zalaegerszegen, 1992 óta.
@@ -48,7 +46,7 @@ export default function Home() {
                                 href="https://gumiszervizem.hu/szervizek/autopatika/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-block bg-brand-green text-white font-bold py-3 px-8 rounded-md transition-all duration-300 shadow-lg hover:shadow-brand-green/30 hover:-translate-y-1 hover:bg-[#5a8204]"
+                                className="inline-block bg-brand-green text-white font-bold py-3 px-8 rounded-md transition-all duration-300 shadow-lg hover:shadow-brand-green/30 hover:-translate-y-1 hover:bg-[#009800]"
                             >
                                 Időpontfoglalás
                             </a>
@@ -67,7 +65,7 @@ export default function Home() {
                                 src="/media/app_ikon.png"
                                 alt="Autópatika mobilalkalmazás ikonja"
                                 fill
-                                sizes="(max-width: 768px) 192px, 256px"
+                                sizes="(max-width: 768px) 50vw, 20vw"
                                 className="object-contain"
                                 priority
                             />

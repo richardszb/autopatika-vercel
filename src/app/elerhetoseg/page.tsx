@@ -67,7 +67,7 @@ export default function Elerhetoseg() {
 
             <div className="max-w-7xl mx-auto px-4 text-center mb-16">
                 <h1 className="text-4xl md:text-5xl font-black text-brand-darkblue mb-4 tracking-tight">
-                    Lépjen velünk <span className="text-brand-sage drop-shadow-sm">kapcsolatba!</span>
+                    Lépjen velünk <span className="text-brand-green drop-shadow-sm">kapcsolatba!</span>
                 </h1>
                 <p className="text-lg text-brand-slate max-w-2xl mx-auto">
                     Kérdése van szolgáltatásainkkal kapcsolatban, vagy árajánlatot szeretne kérni? Keressen minket bizalommal az alábbi elérhetőségeken, vagy küldjön üzenetet az űrlapon keresztül!
@@ -91,7 +91,7 @@ export default function Elerhetoseg() {
                                 rel="noopener noreferrer"
                                 className="group flex items-center gap-6 p-4 rounded-xl transition-all duration-300 hover:bg-brand-lightgray cursor-pointer"
                             >
-                                <div className="bg-brand-sage/20 p-3 rounded-full text-brand-green transition-all duration-300 group-hover:scale-110 group-hover:bg-brand-green group-hover:text-white">
+                                <div className="bg-brand-green/20 p-3 rounded-full text-brand-green transition-all duration-300 group-hover:scale-110 group-hover:bg-brand-green group-hover:text-white">
                                     <MapPin size={24} />
                                 </div>
                                 <div>
@@ -102,7 +102,7 @@ export default function Elerhetoseg() {
 
                             {/* TELEFON BLOKK */}
                             <div className="group flex items-start gap-6 p-4 rounded-xl transition-all duration-300 hover:bg-brand-lightgray">
-                                <div className="bg-brand-sage/20 p-3 rounded-full text-brand-green transition-all duration-300 group-hover:scale-110 group-hover:bg-brand-green group-hover:text-white mt-1">
+                                <div className="bg-brand-green/20 p-3 rounded-full text-brand-green transition-all duration-300 group-hover:scale-110 group-hover:bg-brand-green group-hover:text-white mt-1">
                                     <Phone size={24} />
                                 </div>
                                 <div>
@@ -119,7 +119,7 @@ export default function Elerhetoseg() {
                                 href="mailto:autopatikazeg@gmail.com"
                                 className="group flex items-center gap-6 p-4 rounded-xl transition-all duration-300 hover:bg-brand-lightgray cursor-pointer"
                             >
-                                <div className="bg-brand-sage/20 p-3 rounded-full text-brand-green transition-all duration-300 group-hover:scale-110 group-hover:bg-brand-green group-hover:text-white">
+                                <div className="bg-brand-green/20 p-3 rounded-full text-brand-green transition-all duration-300 group-hover:scale-110 group-hover:bg-brand-green group-hover:text-white">
                                     <Mail size={24} />
                                 </div>
                                 <div>
@@ -147,7 +147,7 @@ export default function Elerhetoseg() {
                                     type="text"
                                     name="name"
                                     required
-                                    className="w-full bg-white/10 border border-white/20 text-white placeholder-white/50 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-sage focus:border-transparent transition-all"
+                                    className="w-full bg-white/10 border border-white/20 text-white placeholder-white/50 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all"
                                     placeholder="Teljes Név"
                                 />
                             </div>
@@ -158,7 +158,7 @@ export default function Elerhetoseg() {
                                         type="email"
                                         name="email"
                                         required
-                                        className="w-full bg-white/10 border border-white/20 text-white placeholder-white/50 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-sage focus:border-transparent transition-all"
+                                        className="w-full bg-white/10 border border-white/20 text-white placeholder-white/50 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all"
                                         placeholder="E-mail cím"
                                     />
                                 </div>
@@ -166,7 +166,7 @@ export default function Elerhetoseg() {
                                     <input
                                         type="tel"
                                         name="phone"
-                                        className="w-full bg-white/10 border border-white/20 text-white placeholder-white/50 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-sage focus:border-transparent transition-all"
+                                        className="w-full bg-white/10 border border-white/20 text-white placeholder-white/50 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all"
                                         placeholder="Telefonszám (opcionális)"
                                     />
                                 </div>
@@ -177,7 +177,7 @@ export default function Elerhetoseg() {
                                     name="message"
                                     rows={3}
                                     required
-                                    className="w-full bg-white/10 border border-white/20 text-white placeholder-white/50 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-sage focus:border-transparent transition-all resize-none"
+                                    className="w-full bg-white/10 border border-white/20 text-white placeholder-white/50 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all resize-none"
                                     placeholder="Miben segíthetünk?"
                                 ></textarea>
                             </div>
@@ -196,7 +196,7 @@ export default function Elerhetoseg() {
                                             setCaptchaAnswer(e.target.value);
                                             setCaptchaError(false);
                                         }}
-                                        className={`w-full bg-white/10 border ${captchaError ? 'border-red-500 ring-1 ring-red-500' : 'border-white/20'} text-white placeholder-white/50 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-sage transition-all`}
+                                        className={`w-full bg-white/10 border ${captchaError ? 'border-red-500 ring-1 ring-red-500' : 'border-white/20'} text-white placeholder-white/50 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-green transition-all`}
                                         placeholder="Eredmény..."
                                     />
                                     {captchaError && <p className="text-red-400 text-sm mt-2 font-medium">Helytelen válasz, kérjük próbálja újra!</p>}
@@ -207,9 +207,9 @@ export default function Elerhetoseg() {
                                 type="submit"
                                 disabled={status === "loading" || status === "success"}
                                 className={`w-full flex items-center justify-center gap-2 font-bold py-4 px-8 rounded-lg transition-all duration-300 text-lg shadow-lg ${
-                                    status === "success" ? "bg-brand-sage text-brand-darkblue" :
+                                    status === "success" ? "bg-brand-green text-brand-darkblue" :
                                         status === "error" ? "bg-red-500 text-white hover:bg-red-600" :
-                                            "bg-brand-sage text-brand-darkblue hover:bg-white hover:text-brand-green"
+                                            "bg-brand-green text-brand-darkblue hover:bg-white hover:text-brand-green"
                                 } ${status === "loading" ? "opacity-75 cursor-wait" : ""}`}
                             >
                                 {status === "idle" && <><Send size={20} /> Üzenet küldése</>}
@@ -276,17 +276,25 @@ export default function Elerhetoseg() {
                                 Nyitvatartás
                             </h3>
                             <div className="space-y-4">
+                                {/* Hétfő - Péntek sor */}
                                 <div className="flex justify-between items-center text-lg">
-                                    <span className="font-medium">Hétfő – Péntek:</span>
-                                    <span className="font-bold">8:00 – 16:30</span>
+                                    <span className="font-medium w-[45%]">Hétfő – Péntek:</span>
+                                    <span className="font-bold text-right">8:00 – 16:30</span>
                                 </div>
-                                <div className="flex justify-between items-center text-lg">
-                                    <span className="font-medium">Szombat:</span>
-                                    <span className="font-bold">8:00 – 12:00 (érdeklődjön telefonon)</span>
+
+                                {/* Szombat sor */}
+                                <div className="flex justify-between items-start text-lg">
+                                    <span className="font-medium w-[45%]">Szombat:</span>
+                                    <div className="flex flex-col items-end">
+                                        <span className="font-bold">8:00 – 12:00</span>
+                                        <span className="text-base italic font-medium opacity-80 mt-0.5">(érdeklődjön telefonon)</span>
+                                    </div>
                                 </div>
-                                <div className="flex justify-between items-center text-lg text-brand-sage">
-                                    <span className="font-medium">Vasárnap:</span>
-                                    <span className="font-bold">Zárva</span>
+
+                                {/* Vasárnap sor */}
+                                <div className="flex justify-between items-center text-lg text-brand-green">
+                                    <span className="font-medium w-[45%]">Vasárnap:</span>
+                                    <span className="font-bold text-right">Zárva</span>
                                 </div>
                             </div>
                         </div>
