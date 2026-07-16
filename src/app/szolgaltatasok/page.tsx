@@ -63,7 +63,7 @@ const servicesData = [
                     className="relative group cursor-pointer text-brand-darkblue font-bold border-b-2 border-dotted border-brand-darkblue hover:text-blue-600 hover:border-blue-600 focus:text-blue-600 focus:border-blue-600 outline-none transition-colors inline-flex items-center align-middle -translate-y-0.5 mx-2 my-1.5 whitespace-nowrap"
                 >
                     és még sok más...
-                    <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 hidden group-hover:block group-focus:block w-72 bg-brand-darkblue text-white text-sm font-normal p-4 rounded-xl shadow-2xl z-50 pointer-events-none before:content-[''] before:absolute before:top-full before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-t-brand-darkblue whitespace-normal leading-relaxed">
+                    <span className="absolute bottom-full left-0 mb-3 hidden group-hover:block group-focus:block w-64 sm:w-72 max-w-[85vw] bg-brand-darkblue text-white text-sm font-normal p-4 rounded-xl shadow-2xl z-50 pointer-events-none before:content-[''] before:absolute before:top-full before:left-6 before:border-8 before:border-transparent before:border-t-brand-darkblue whitespace-normal leading-relaxed">
                         Laufenn, Taurus, Tracmax, Falken, Uniroyal, Toyo Tires, Royal Black, Barum, Nokian Tyres, Kumho, Nexen.
                     </span>
                 </span>
@@ -87,8 +87,8 @@ const servicesData = [
                     <Image src="/media/logos/ozracing.svg" alt="OZ Racing" width={110} height={28} className="w-27.5 h-7 object-contain" />
                 </a>
 
-                <a href="https://www.bbs.com/en/products" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-middle -translate-y-0.5 mx-2 my-1.5 hover:scale-110 transition-transform">
-                    <Image src="/media/logos/bbs.svg" alt="BBS" width={80} height={28} style={{ width: 'auto', height: '28px' }} className="object-contain" />
+                <a href="https://www.bbs.com/en/products" target="_blank" rel="noopener noreferrer" className="relative inline-block h-7 w-20 align-middle -translate-y-0.5 mx-2 my-1.5 hover:scale-110 transition-transform">
+                    <Image src="/media/logos/bbs.svg" alt="BBS" fill sizes="80px" className="object-contain" />
                 </a>
 
                 <a href="https://momo.com/en-gb/road-wheels/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-middle -translate-y-0.5 mx-2 my-1.5 hover:scale-110 transition-transform">
@@ -114,7 +114,7 @@ const servicesData = [
                     className="relative group cursor-pointer text-brand-darkblue font-bold border-b-2 border-dotted border-brand-darkblue hover:text-blue-600 hover:border-blue-600 focus:text-blue-600 focus:border-blue-600 outline-none transition-colors inline-flex items-center align-middle -translate-y-0.5 mx-2 my-1.5 whitespace-nowrap"
                 >
                         és még sok más...
-                        <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 hidden group-hover:block group-focus:block w-72 bg-brand-darkblue text-white text-sm font-normal p-4 rounded-xl shadow-2xl z-50 pointer-events-none before:content-[''] before:absolute before:top-full before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-t-brand-darkblue whitespace-normal leading-relaxed">
+                        <span className="absolute bottom-full left-0 mb-3 hidden group-hover:block group-focus:block w-64 sm:w-72 max-w-[85vw] bg-brand-darkblue text-white text-sm font-normal p-4 rounded-xl shadow-2xl z-50 pointer-events-none before:content-[''] before:absolute before:top-full before:left-6 before:border-8 before:border-transparent before:border-t-brand-darkblue whitespace-normal leading-relaxed">
                             MSW, Platin Wheels, Reds by Momo, Ronal, Keskin, Rotiform.
                         </span>
                 </span>
@@ -229,23 +229,23 @@ const servicesData = [
 
                 <div className="mb-8">
                     Kínálatunkban:&nbsp;
-                    <a href="https://www.bannerbatterien.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-middle -translate-y-0.5 mx-1.5 hover:scale-110 transition-transform">
-                        <Image src="/media/logos/banner.png" alt="Banner" width={80} height={24} style={{ width: 'auto', height: '24px' }} className="object-contain" />
+                    <a href="https://www.bannerbatterien.com/" target="_blank" rel="noopener noreferrer" className="relative inline-block h-6 w-20 align-middle -translate-y-0.5 mx-1.5 hover:scale-110 transition-transform">
+                        <Image src="/media/logos/banner.png" alt="Banner" fill sizes="80px" className="object-contain" />
                     </a>
-                    <span className="inline-flex items-center align-middle -translate-y-0.5 mx-1.5 hover:scale-110 transition-transform cursor-default">
-                        <Image src="/media/logos/electricpower.png" alt="Electric Power" width={80} height={24} style={{ width: 'auto', height: '24px' }} className="object-contain" />
+                    <span className="relative inline-block h-6 w-20 align-middle -translate-y-0.5 mx-1.5 hover:scale-110 transition-transform cursor-default">
+                        <Image src="/media/logos/electricpower.png" alt="Electric Power" fill sizes="80px" className="object-contain" />
                     </span>
-                    <a href="https://www.varta-automotive.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-middle -translate-y-0.5 mx-1.5 hover:scale-110 transition-transform">
-                        <Image src="/media/logos/varta.svg" alt="Varta" width={80} height={24} style={{ width: 'auto', height: '24px' }} className="object-contain" />
+                    <a href="https://www.varta-automotive.com/" target="_blank" rel="noopener noreferrer" className="relative inline-block h-6 w-20 align-middle -translate-y-0.5 mx-1.5 hover:scale-110 transition-transform">
+                        <Image src="/media/logos/varta.svg" alt="Varta" fill sizes="80px" className="object-contain" />
                     </a>
-                    <a href="https://www.yuasa.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-middle -translate-y-0.5 mx-1.5 hover:scale-110 transition-transform">
-                        <Image src="/media/logos/yuasa.svg" alt="Yuasa" width={80} height={24} style={{ width: 'auto', height: '24px' }} className="object-contain" />
+                    <a href="https://www.yuasa.com/" target="_blank" rel="noopener noreferrer" className="relative inline-block h-6 w-20 align-middle -translate-y-0.5 mx-1.5 hover:scale-110 transition-transform">
+                        <Image src="/media/logos/yuasa.svg" alt="Yuasa" fill sizes="80px" className="object-contain" />
                     </a>
-                    <span className="inline-flex items-center align-middle -translate-y-0.5 mx-1.5 hover:scale-110 transition-transform cursor-default">
-                        <Image src="/media/logos/jpmoto.png" alt="JP Moto" width={80} height={24} style={{ width: 'auto', height: '24px' }} className="object-contain" />
+                    <span className="relative inline-block h-6 w-20 align-middle -translate-y-0.5 mx-1.5 hover:scale-110 transition-transform cursor-default">
+                        <Image src="/media/logos/jpmoto.png" alt="JP Moto" fill sizes="80px" className="object-contain" />
                     </span>
-                    <a href="https://www.exidegroup.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-middle -translate-y-0.5 mx-1.5 hover:scale-110 transition-transform">
-                        <Image src="/media/logos/exide.png" alt="Exide" width={80} height={24} style={{ width: 'auto', height: '24px' }} className="object-contain" />
+                    <a href="https://www.exidegroup.com/" target="_blank" rel="noopener noreferrer" className="relative inline-block h-6 w-20 align-middle -translate-y-0.5 mx-1.5 hover:scale-110 transition-transform">
+                        <Image src="/media/logos/exide.png" alt="Exide" fill sizes="80px" className="object-contain" />
                     </a>
                 </div>
 
@@ -253,16 +253,20 @@ const servicesData = [
                     Egyéb kereskedelmi partnereink és forgalmazott márkáink között megtalálhatók:&nbsp;
 
                     {/* Autófelszerelési logók */}
-                    <a href="https://www.castrol.com/hu_hu/hungary.html" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-middle -translate-y-0.5 mx-2 my-1.5 hover:scale-110 transition-transform">
-                        <Image src="/media/logos/castrol.svg" alt="Castrol" width={100} height={28} style={{ width: 'auto', height: '28px' }} className="object-contain" />
+                    <a href="https://www.castrol.com/hu_hu/hungary.html" target="_blank" rel="noopener noreferrer" className="relative inline-block h-7 w-25 align-middle -translate-y-0.5 mx-2 my-1.5 hover:scale-110 transition-transform">
+                        <Image src="/media/logos/castrol.svg" alt="Castrol" fill sizes="100px" className="object-contain" />
                     </a>
 
-                    <a href="https://www.osram.hu/cb/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-middle -translate-y-0.5 mx-2 my-1.5 hover:scale-110 transition-transform">
-                        <Image src="/media/logos/osram.svg" alt="Osram" width={100} height={28} style={{ width: 'auto', height: '28px' }} className="object-contain" />
+                    <a href="https://www.osram.hu/cb/" target="_blank" rel="noopener noreferrer" className="relative inline-block h-7 w-25 align-middle -translate-y-0.5 mx-2 my-1.5 hover:scale-110 transition-transform">
+                        <Image src="/media/logos/osram.svg" alt="Osram" fill sizes="100px" className="object-contain" />
                     </a>
 
-                    <a href="https://www.sparco-official.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-middle -translate-y-0.5 mx-2 my-1.5 hover:scale-110 transition-transform">
-                        <Image src="/media/logos/sparco.svg" alt="Sparco" width={100} height={28} style={{ width: 'auto', height: '28px' }} className="object-contain" />
+                    <a href="https://www.sparco-official.com/" target="_blank" rel="noopener noreferrer" className="relative inline-block h-7 w-25 align-middle -translate-y-0.5 mx-2 my-1.5 hover:scale-110 transition-transform">
+                        <Image src="/media/logos/sparco.svg" alt="Sparco" fill sizes="100px" className="object-contain" />
+                    </a>
+
+                    <a href="https://www.akrapovic.com/en" target="_blank" rel="noopener noreferrer" className="relative inline-block h-7 w-25 align-middle -translate-y-0.5 mx-2 my-1.5 hover:scale-110 transition-transform">
+                        <Image src="/media/logos/akrapovic.svg" alt="Akrapovic" fill sizes="100px" className="object-contain" />
                     </a>
                 </div>
             </div>

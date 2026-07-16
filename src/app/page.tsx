@@ -62,7 +62,7 @@ export default function Home() {
                     <div className="w-full md:w-1/3 flex justify-center">
                         <div className="relative w-48 h-48 md:w-64 md:h-64">
                             <Image
-                                src="/media/app_ikon.png"
+                                src="/media/app_ikon.svg"
                                 alt="Autópatika mobilalkalmazás ikonja"
                                 fill
                                 sizes="(max-width: 768px) 50vw, 20vw"
