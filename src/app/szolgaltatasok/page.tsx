@@ -57,9 +57,13 @@ const servicesData = [
                 </a>
 
                 {/* A lebegő felirat */}
-                <span className="relative group cursor-pointer text-brand-darkblue font-bold border-b-2 border-dotted border-brand-darkblue hover:text-blue-600 hover:border-blue-600 transition-colors inline-flex items-center align-middle -translate-y-0.5 mx-2 my-1.5 whitespace-nowrap">
+                <span
+                    tabIndex={0}
+                    role="button"
+                    className="relative group cursor-pointer text-brand-darkblue font-bold border-b-2 border-dotted border-brand-darkblue hover:text-blue-600 hover:border-blue-600 focus:text-blue-600 focus:border-blue-600 outline-none transition-colors inline-flex items-center align-middle -translate-y-0.5 mx-2 my-1.5 whitespace-nowrap"
+                >
                     és még sok más...
-                    <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 hidden group-hover:block w-72 bg-brand-darkblue text-white text-sm font-normal p-4 rounded-xl shadow-2xl z-50 pointer-events-none before:content-[''] before:absolute before:top-full before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-t-brand-darkblue whitespace-normal leading-relaxed">
+                    <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 hidden group-hover:block group-focus:block w-72 bg-brand-darkblue text-white text-sm font-normal p-4 rounded-xl shadow-2xl z-50 pointer-events-none before:content-[''] before:absolute before:top-full before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-t-brand-darkblue whitespace-normal leading-relaxed">
                         Laufenn, Taurus, Tracmax, Falken, Uniroyal, Toyo Tires, Royal Black, Barum, Nokian Tyres, Kumho, Nexen.
                     </span>
                 </span>
@@ -84,7 +88,7 @@ const servicesData = [
                 </a>
 
                 <a href="https://www.bbs.com/en/products" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-middle -translate-y-0.5 mx-2 my-1.5 hover:scale-110 transition-transform">
-                    <Image src="/media/logos/bbs.svg" alt="BBS" width={150} height={28} className="w-20 h-7 object-contain" style={{ width: 'auto', height: 'auto', maxHeight: '28px', maxWidth: '80px' }}/>
+                    <Image src="/media/logos/bbs.svg" alt="BBS" width={80} height={28} style={{ width: 'auto', height: '28px' }} className="object-contain" />
                 </a>
 
                 <a href="https://momo.com/en-gb/road-wheels/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-middle -translate-y-0.5 mx-2 my-1.5 hover:scale-110 transition-transform">
@@ -104,11 +108,15 @@ const servicesData = [
                 </a>
 
                 {/* A lebegő felirat */}
-                <span className="relative group cursor-pointer text-brand-darkblue font-bold border-b-2 border-dotted border-brand-darkblue hover:text-blue-600 hover:border-blue-600 transition-colors inline-flex items-center align-middle -translate-y-0.5 mx-2 my-1.5 whitespace-nowrap">
-                    és még sok más...
-                    <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 hidden group-hover:block w-72 bg-brand-darkblue text-white text-sm font-normal p-4 rounded-xl shadow-2xl z-50 pointer-events-none before:content-[''] before:absolute before:top-full before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-t-brand-darkblue whitespace-normal leading-relaxed">
-                        MSW, Platin Wheels, Reds by Momo, Ronal, Keskin, Rotiform.
-                    </span>
+                <span
+                    tabIndex={0}
+                    role="button"
+                    className="relative group cursor-pointer text-brand-darkblue font-bold border-b-2 border-dotted border-brand-darkblue hover:text-blue-600 hover:border-blue-600 focus:text-blue-600 focus:border-blue-600 outline-none transition-colors inline-flex items-center align-middle -translate-y-0.5 mx-2 my-1.5 whitespace-nowrap"
+                >
+                        és még sok más...
+                        <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 hidden group-hover:block group-focus:block w-72 bg-brand-darkblue text-white text-sm font-normal p-4 rounded-xl shadow-2xl z-50 pointer-events-none before:content-[''] before:absolute before:top-full before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-t-brand-darkblue whitespace-normal leading-relaxed">
+                            MSW, Platin Wheels, Reds by Momo, Ronal, Keskin, Rotiform.
+                        </span>
                 </span>
             </p>
         ),
@@ -154,30 +162,40 @@ const servicesData = [
         menuImg: "/media/gepjarmu_javitas_menu.jpg",
         content: (
             <div className="flex flex-col lg:flex-row gap-8">
-                <div className="lg:w-2/3 text-brand-slate text-lg">
-                    <ul className="list-disc pl-5 space-y-2 marker:text-brand-green">
-                        <li>Személy és tehergépjárművek, mezőgazdasági és földmunkagépek, targonca és motorkerékpár <strong className="text-brand-darkblue"> gumiabroncsainak szerelése és centrírozása</strong></li>
-                        <li>Alu- és lemezfelnik javítása</li>
-                        <li>Akkumulátor bevizsgálás és csere</li>
-                        <li>Klíma ellenőrzés, töltés és tisztítás</li>
+                <div className="lg:w-2/3 text-brand-slate text-lg leading-loose">
+                    <p className="mb-4">
+                        Időszakos és azonnali beavatkozást igénylő <strong className="text-brand-darkblue">gyorsszerviz szolgáltatásainkkal</strong> biztosítjuk gépjárműve folyamatos, biztonságos működését:
+                    </p>
+                    <ul className="list-disc pl-5 space-y-3 marker:text-brand-green">
+                        <li>
+                            <strong className="text-brand-darkblue">Személy- és tehergépjárművek</strong>, mezőgazdasági és földmunkagépek, targonca és motorkerékpár gumiabroncsainak szakszerű szerelése és centrírozása.
+                        </li>
+                        <li>
+                            <strong className="text-brand-darkblue">Akkumulátorok</strong> professzionális műszeres bevizsgálása, töltöttségi szint ellenőrzése és szükség esetén azonnali cseréje.
+                        </li>
+                        <li>
+                            Gyorsdiagnosztika és hibaelhárítás.
+                        </li>
                     </ul>
                 </div>
+
+                {/* Jobb oldali kártya frissítve a gyorsszerviz feladataira */}
                 <div className="lg:w-1/3">
-                    <div className="bg-white rounded-lg p-6 shadow-md border-t-4 border-brand-darkblue">
+                    <div className="bg-white rounded-xl p-6 shadow-md border-t-4 border-brand-darkblue">
                         <h3 className="font-bold text-brand-darkblue mb-4 text-center text-xl">Várható időtartamok</h3>
-                        <table className="w-full text-brand-slate">
+                        <table className="w-full text-brand-slate text-sm lg:text-base">
                             <tbody>
                             <tr className="border-b border-brand-lightgray">
-                                <td className="py-3">Gumiszerelés</td>
-                                <td className="py-3 text-right font-bold text-brand-darkblue">30–60 perc</td>
+                                <td className="py-3 pr-2">Gumiszerelés / centrír</td>
+                                <td className="py-3 text-right font-bold text-brand-darkblue whitespace-nowrap">30–60 perc</td>
                             </tr>
                             <tr className="border-b border-brand-lightgray">
-                                <td className="py-3">Futómű beállítás</td>
-                                <td className="py-3 text-right font-bold text-brand-darkblue">kb. 1 óra</td>
+                                <td className="py-3 pr-2">Akkumulátor csere</td>
+                                <td className="py-3 text-right font-bold text-brand-darkblue whitespace-nowrap">15–20 perc</td>
                             </tr>
                             <tr>
-                                <td className="py-3">Klímatöltés</td>
-                                <td className="py-3 text-right font-bold text-brand-darkblue">45 perc</td>
+                                <td className="py-3 pr-2">Futómű beállítás</td>
+                                <td className="py-3 text-right font-bold text-brand-darkblue whitespace-nowrap">kb. 45 perc</td>
                             </tr>
                             </tbody>
                         </table>
@@ -192,9 +210,62 @@ const servicesData = [
         title: "Kereskedelem",
         menuImg: "/media/kereskedelem_menu.jpg",
         content: (
-            <p className="text-lg text-brand-slate mb-6">
-                Üzletünkben az autófelszerelési termékek széles körét kínáljuk. Partnereink között megtalálható a <strong className="text-brand-darkblue">Castrol</strong>, az <strong className="text-brand-darkblue">Osram</strong> és a <strong className="text-brand-darkblue">Prevent</strong>. Ablaktörlők, akkumulátorok, autóápolási cikkek és kötelező tartozékok azonnal, raktárról.
-            </p>
+            <div className="text-lg text-brand-slate mb-6 leading-loose">
+                <p className="mb-4">
+                    Üzletünkben az autófelszerelési termékek széles körét kínáljuk. Ablaktörlők, autóápolási cikkek, tuning felszerelések és kötelező tartozékok azonnal, raktárról.
+                </p>
+
+                <p className="mb-2">
+                    Kiemelt figyelmet fordítunk a különböző <strong className="text-brand-darkblue">akkumulátorokra</strong> is:
+                </p>
+                <ul className="list-disc pl-5 mb-4 space-y-3 marker:text-brand-green">
+                    <li className="leading-loose">
+                        <strong className="text-brand-darkblue">Indító és szünetmentes akkumulátorok</strong> (start-stop rendszerhez való AGM és EFB típusok is).
+                    </li>
+                    <li className="leading-loose">
+                        <strong className="text-brand-darkblue">Motor, robogó és fűnyíró indító akkuk</strong>.
+                    </li>
+                </ul>
+
+                <div className="mb-8">
+                    Kínálatunkban:&nbsp;
+                    <a href="https://www.bannerbatterien.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-middle -translate-y-0.5 mx-1.5 hover:scale-110 transition-transform">
+                        <Image src="/media/logos/banner.png" alt="Banner" width={80} height={24} style={{ width: 'auto', height: '24px' }} className="object-contain" />
+                    </a>
+                    <span className="inline-flex items-center align-middle -translate-y-0.5 mx-1.5 hover:scale-110 transition-transform cursor-default">
+                        <Image src="/media/logos/electricpower.png" alt="Electric Power" width={80} height={24} style={{ width: 'auto', height: '24px' }} className="object-contain" />
+                    </span>
+                    <a href="https://www.varta-automotive.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-middle -translate-y-0.5 mx-1.5 hover:scale-110 transition-transform">
+                        <Image src="/media/logos/varta.svg" alt="Varta" width={80} height={24} style={{ width: 'auto', height: '24px' }} className="object-contain" />
+                    </a>
+                    <a href="https://www.yuasa.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-middle -translate-y-0.5 mx-1.5 hover:scale-110 transition-transform">
+                        <Image src="/media/logos/yuasa.svg" alt="Yuasa" width={80} height={24} style={{ width: 'auto', height: '24px' }} className="object-contain" />
+                    </a>
+                    <span className="inline-flex items-center align-middle -translate-y-0.5 mx-1.5 hover:scale-110 transition-transform cursor-default">
+                        <Image src="/media/logos/jpmoto.png" alt="JP Moto" width={80} height={24} style={{ width: 'auto', height: '24px' }} className="object-contain" />
+                    </span>
+                    <a href="https://www.exidegroup.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-middle -translate-y-0.5 mx-1.5 hover:scale-110 transition-transform">
+                        <Image src="/media/logos/exide.png" alt="Exide" width={80} height={24} style={{ width: 'auto', height: '24px' }} className="object-contain" />
+                    </a>
+                </div>
+
+                <div className="inline-block">
+                    Egyéb kereskedelmi partnereink és forgalmazott márkáink között megtalálhatók:&nbsp;
+
+                    {/* Autófelszerelési logók */}
+                    <a href="https://www.castrol.com/hu_hu/hungary.html" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-middle -translate-y-0.5 mx-2 my-1.5 hover:scale-110 transition-transform">
+                        <Image src="/media/logos/castrol.svg" alt="Castrol" width={100} height={28} style={{ width: 'auto', height: '28px' }} className="object-contain" />
+                    </a>
+
+                    <a href="https://www.osram.hu/cb/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-middle -translate-y-0.5 mx-2 my-1.5 hover:scale-110 transition-transform">
+                        <Image src="/media/logos/osram.svg" alt="Osram" width={100} height={28} style={{ width: 'auto', height: '28px' }} className="object-contain" />
+                    </a>
+
+                    <a href="https://www.sparco-official.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center align-middle -translate-y-0.5 mx-2 my-1.5 hover:scale-110 transition-transform">
+                        <Image src="/media/logos/sparco.svg" alt="Sparco" width={100} height={28} style={{ width: 'auto', height: '28px' }} className="object-contain" />
+                    </a>
+                </div>
+            </div>
         ),
         images: [
             { src: "/media/kereskedelem_1.jpg", alt: "Autóápolási és kenőanyag kínálat" },
