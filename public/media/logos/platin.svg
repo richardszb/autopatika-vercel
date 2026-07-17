@@ -1,4 +1,6 @@
-<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" enable-background="new 0 0 220 75" xml:space="preserve" viewBox="0 0 220 75">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg"
+	 x="0px" y="0px" enable-background="new 0 0 220 75"
+     xml:space="preserve" viewBox="0 0 220 75">
 <g>
 	<polygon fill="#C8102E" points="75.658,47.48 83.636,34.531 93.104,34.531 90.007,16.975 70.68,47.48 55.396,47.48 86.702,0.215    99.861,0.215 109.842,47.48  "/>
 	<path fill="#D60617" d="M99.756,0.344l9.928,47.008H75.89l7.818-12.688h9.243h0.308l-0.054-0.304l-3.011-17.076l-0.116-0.656   l-0.356,0.562l-19.11,30.165H55.639L86.772,0.345L99.756,0.344 M99.966,0.085H86.633L55.156,47.609h15.596l19.187-30.283   l3.012,17.076h-9.386l-8.137,13.208h34.575L99.966,0.085L99.966,0.085z"/>
