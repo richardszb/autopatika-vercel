@@ -82,12 +82,13 @@ export default function Navbar() {
             </div>
 
             {/* Mobilos lenyíló menü */}
+            {/* Mobilos lenyíló menü */}
             <div
-                className={`md:hidden bg-brand-darkblue shadow-inner overflow-hidden transition-all duration-300 ${
-                    isOpen ? "max-h-64 border-b border-white/10" : "max-h-0"
+                className={`md:hidden bg-brand-darkblue overflow-hidden transition-all duration-300 ease-in-out ${
+                    isOpen ? "max-h-72 border-t border-white/10 shadow-2xl" : "max-h-0"
                 }`}
             >
-                <nav className="flex flex-col gap-2 px-6 py-4">
+                <nav className="flex flex-col px-6">
                     {[
                         { name: "Kezdőlap", path: "/" },
                         { name: "Szolgáltatások", path: "/szolgaltatasok" },
@@ -97,8 +98,8 @@ export default function Navbar() {
                             key={link.path}
                             href={link.path}
                             onClick={() => setIsOpen(false)}
-                            className={`text-lg font-bold py-2 border-b border-white/10 last:border-0 ${
-                                isActive(link.path) ? "text-brand-green" : "text-white hover:text-brand-green"
+                            className={`block w-full text-lg tracking-wide font-bold py-5 border-b border-white/5 last:border-0 transition-colors ${
+                                isActive(link.path) ? "text-brand-green" : "text-white/80 hover:text-white"
                             }`}
                         >
                             {link.name}
