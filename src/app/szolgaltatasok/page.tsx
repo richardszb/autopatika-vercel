@@ -11,7 +11,7 @@ const servicesData = [
     {
         id: "gumik",
         title: "Gumik",
-        menuImg: "/media/gumiabroncsok_menu.jpg",
+        menuImg: "/media/gumiabroncsok_1.jpg",
         content: (
             <p className="text-lg text-brand-slate mb-6 leading-loose">
                 <strong className="text-brand-darkblue">Gumiabroncsok széles választékával </strong> rendelkezünk különböző típusú autókra, teherautókra, mezőgazdasági gépjárművekre illetve motorokra. Kínálatunkban megtalálhatók a legismertebb márkák:&nbsp;
@@ -94,7 +94,7 @@ const servicesData = [
             </p>
         ),
         images: [
-            { src: "/media/gumiabroncsok_1.png", alt: "Raktárkészlet – vegyes gumiabroncsok" },
+            { src: "/media/gumiabroncsok_1.jpg", alt: "Raktárkészlet – vegyes gumiabroncsok" },
             { src: "/media/gumiabroncsok_2.jpg", alt: "Személyautó gumiabroncsok" },
             { src: "/media/gumiabroncsok_3.jpg", alt: "Motor gumiabroncsok" },
         ],
@@ -102,7 +102,7 @@ const servicesData = [
     {
         id: "alufelnik",
         title: "Alufelnik",
-        menuImg: "/media/alufelnik_menu.jpg",
+        menuImg: "/media/alufelnik_1.jpg",
         content: (
             <p className="text-lg text-brand-slate mb-6 leading-loose">
                 Üzletünkben <strong className="text-brand-darkblue">különböző átmérőjű, különböző lyuk kiosztású felniket</strong> is megtalál, akár acél akár alufelniről legyen szó. Választékunkban 13-tól 20 colos méretig kínálunk felniket, és szükség esetén a megfelelő <em className="font-medium text-brand-navy">kerékcsavarokat, kerékanyákat </em> is megtalálja nálunk. Kínálatunkban megtalálhatók a legismertebb márkák:&nbsp;
@@ -172,16 +172,16 @@ const servicesData = [
     {
         id: "futomuallitas",
         title: "Futóműállítás",
-        menuImg: "/media/futomualligas_menu.jpg",
+        menuImg: "/media/futomuallitas_1.jpg",
         content: (
             <p className="text-lg text-brand-slate mb-6">
                 Személy és kisteher gépjárművekhez, <strong className="text-brand-darkblue">24&#34;-os kerékátmérőig</strong>, számítógép alapú, <em className="font-medium text-brand-navy">4 mérőfejes berendezés</em> a kerék geometriai jellemzőinek mérésére. A lézeres futómű-beállítás biztosítja az egyenletes gumiabroncs-kopást és a biztonságos menetdinamikát.
             </p>
         ),
         images: [
-            { src: "/media/futomualligas_1.jpg", alt: "Gépjármű futóműállítása" },
-            { src: "/media/futomualligas_2.jpg", alt: "Futóműállítás emelőn" },
-            { src: "/media/futomualligas_3.jpg", alt: "Lézeres mérés futóműállításnál" },
+            { src: "/media/futomuallitas_1.jpg", alt: "Gépjármű futóműállítása" },
+            { src: "/media/futomuallitas_2.jpg", alt: "Futóműállítás emelőn" },
+            { src: "/media/futomuallitas_3.jpg", alt: "Lézeres mérés futóműállításnál" },
         ],
     },
     {
@@ -306,7 +306,6 @@ const servicesData = [
 ];
 
 export default function Szolgaltatasok() {
-    // ... (a komponens többi része változatlan)
     const [lightboxOpen, setLightboxOpen] = useState(false);
     const [currentSlides, setCurrentSlides] = useState<{src: string, alt: string}[]>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -397,6 +396,20 @@ export default function Szolgaltatasok() {
                 index={currentIndex}
                 slides={currentSlides}
                 controller={{ closeOnBackdropClick: true }}
+                // Ezzel a 'render' tulajdonsággal kényszerítjük a Lightbox-ot a Next.js Image használatára
+                render={{
+                    slide: ({ slide }) => (
+                        <div className="relative w-full h-full flex items-center justify-center">
+                            <Image
+                                src={slide.src}
+                                alt={slide.alt || "Nagyított kép"}
+                                fill
+                                sizes="100vw"
+                                className="object-contain"
+                            />
+                        </div>
+                    ),
+                }}
             />
         </div>
     );
