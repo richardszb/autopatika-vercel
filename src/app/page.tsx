@@ -17,55 +17,84 @@ export default function Home() {
 
                 <div className="absolute bottom-0 left-0 w-full h-[60%] bg-linear-to-t from-black/80 to-transparent"></div>
 
-                <div className="absolute bottom-0 left-0 w-full p-8 md:p-12 z-10">
-                    <div className="max-w-7xl mx-auto text-white">
-                        <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-2">
+                <div className="absolute bottom-0 left-0 w-full p-8 md:p-12 xl:p-16 z-10">
+                    <div className="text-white">
+                        <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tight mb-2">
                             Autópatika
                         </h1>
-                        <p className="text-lg text-brand-lightgray max-w-2xl">
+                        <p className="text-lg xl:text-xl text-brand-lightgray max-w-2xl">
                             Professzionális gumi- és autószerviz Zalaegerszegen, 1992 óta.
                         </p>
                     </div>
                 </div>
             </section>
 
-            {/* 2. Időpontfoglalás szekció */}
+            {/* 2. Időpontfoglalás és Ajánlatkérés szekció */}
             <section className="relative py-12 md:py-16 px-4 bg-[url('/media/feherhatter.jpg')] bg-cover bg-center">
                 <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px]"></div>
-                <div className="relative max-w-5xl mx-auto">
-                    <div className="bg-brand-darkblue rounded-2xl shadow-xl p-6 md:p-10 border border-white/5 relative overflow-hidden group">
+
+                <div className="relative max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-8 lg:gap-12">
+
+                    {/* Fődolog: Időpontfoglalás */}
+                    <div className="lg:col-span-3 bg-brand-darkblue rounded-2xl shadow-xl p-6 md:p-10 border border-white/5 relative overflow-hidden group flex flex-col justify-center">
                         <div className="absolute top-0 left-0 w-1.5 h-full bg-brand-green"></div>
-                        <div className="max-w-3xl relative z-10">
+                        <div className="relative z-10">
                             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 tracking-tight">
                                 Foglaljon időpontot online!
                             </h2>
-                            <p className="text-brand-lilac mb-6 text-base md:text-lg leading-relaxed opacity-90">
+                            <p className="text-brand-lilac mb-8 text-base md:text-lg leading-relaxed opacity-90">
                                 Foglaljon időpontot kényelmesen, online, külső partnerünkön keresztül! Nincs várakozás, nincs telefonálgatás – egyszerűen válasszon időpontot pár kattintással.
                             </p>
-                            <a
-                                href="https://gumiszervizem.hu/szervizek/autopatika/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-block bg-brand-green text-white font-bold py-3 px-8 rounded-md transition-all duration-300 shadow-lg hover:shadow-brand-green/30 hover:-translate-y-1 hover:bg-[#009800]"
-                            >
-                                Időpontfoglalás
-                            </a>
+                            <div>
+                                <a
+                                    href="https://gumiszervizem.hu/szervizek/autopatika/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-block bg-brand-green text-white font-bold py-3 px-8 rounded-md transition-all duration-300 shadow-lg hover:shadow-brand-green/30 hover:-translate-y-1 hover:bg-[#009800]"
+                                >
+                                    Időpontfoglalás
+                                </a>
+                            </div>
                         </div>
                     </div>
+
+                    {/* Másodlagos: Ajánlatkérés */}
+                    <div className="lg:col-span-2 bg-brand-green rounded-2xl shadow-xl p-6 md:p-10 border border-white/10 relative overflow-hidden group flex flex-col justify-center transition-shadow duration-300 hover:shadow-2xl">
+                        <div className="absolute top-0 left-0 w-1.5 h-full bg-brand-darkblue"></div>
+                        <div className="relative z-10">
+                            <h3 className="text-2xl font-bold text-white mb-3 tracking-tight">
+                                Felni és gumi kínálat
+                            </h3>
+                            <p className="text-white/90 mb-8 text-base leading-relaxed">
+                                Böngésszen hatalmas választékunkban és kérjen egyedi, személyre szabott árajánlatot szakértő csapatunktól.
+                            </p>
+                            <div>
+                                <a
+                                    href="https://felnitrader.hu/autopatika"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-block bg-brand-darkblue text-white font-bold py-3 px-8 rounded-md transition-all duration-300 shadow-lg hover:shadow-brand-darkblue/40 hover:-translate-y-1"
+                                >
+                                    Árajánlatot kérek
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
             {/* 3. App szekció (Letöltő gombokkal) */}
             <section className="bg-white py-16 md:py-24 px-4">
-                <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16">
+                <div className="max-w-screen-2xl mx-auto flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16 xl:gap-32">
 
-                    <div className="w-full md:w-1/3 flex justify-center">
-                        <div className="relative w-48 h-48 md:w-64 md:h-64">
+                    <div className="w-full md:w-1/3 flex justify-center md:justify-end">
+                        <div className="relative w-48 h-48 md:w-64 md:h-64 xl:w-80 xl:h-80">
                             <Image
                                 src="/media/app_ikon.svg"
                                 alt="Autópatika mobilalkalmazás ikonja"
                                 fill
-                                sizes="(max-width: 768px) 50vw, 20vw"
+                                sizes="(max-width: 768px) 50vw, 30vw"
                                 className="object-contain"
                                 priority
                             />
@@ -73,10 +102,10 @@ export default function Home() {
                     </div>
 
                     <div className="w-full md:w-2/3 text-center md:text-left">
-                        <h2 className="text-3xl md:text-4xl font-bold text-brand-darkblue mb-4">
+                        <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-brand-darkblue mb-4">
                             Töltse le mobilalkalmazásunkat!
                         </h2>
-                        <p className="text-brand-slate text-lg mb-8 max-w-2xl leading-relaxed">
+                        <p className="text-brand-slate text-lg xl:text-xl mb-8 max-w-2xl leading-relaxed">
                             Töltse le ingyenes mobilalkalmazásunkat a személyre szabott kiszolgálásért, kényelmes időpontfoglalásért.
                         </p>
 
